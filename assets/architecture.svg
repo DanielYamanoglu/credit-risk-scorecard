@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 210" width="1000" height="210" role="img" aria-labelledby="t d">
+<title id="t">Pipeline: repayment history to probability of default, scorecard points and an approval cutoff</title><desc id="d">Six months of repayment history become behavioural features. A WoE scorecard and a monotonic gradient boosting model are trained on 70 percent of accounts, cross validated, then scored once on a 30 percent hold-out with Gini, KS, calibration and PSI. A profit based cutoff turns the probability of default into an approve or decline decision.</desc>
+<defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#475569"/></marker><style>
+      text{font-family:-apple-system,"Segoe UI",Helvetica,Arial,sans-serif;fill:#0f172a}
+      .h{font-size:15px;font-weight:700}
+      .s{font-size:12px;fill:#334155}
+      .k{font-size:11px;font-weight:700;fill:#64748b;letter-spacing:.08em}
+      .box{fill:#ffffff;stroke:#94a3b8;stroke-width:1.5}
+      .src{fill:#e0f2fe;stroke:#0284c7;stroke-width:1.5}
+      .out{fill:#dcfce7;stroke:#16a34a;stroke-width:1.5}
+      .warn{fill:#fef3c7;stroke:#d97706;stroke-width:1.5}
+      .ln{stroke:#475569;stroke-width:1.6;fill:none}
+      .v{font-size:13px;font-weight:700}
+    </style></defs>
+<rect width="1000" height="210" rx="12" fill="#f8fafc" stroke="#cbd5e1"/>
+<text class="k" x="30" y="38">DATA</text>
+<rect class="src" x="30" y="54" width="166" height="124" rx="8"/>
+<text class="h" x="44" y="82">30,000 card accounts</text>
+<text class="s" x="44" y="106">UCI, Taiwan 2005</text>
+<text class="s" x="44" y="124">6 months of history</text>
+<text class="s" x="44" y="142">22.1% default</text>
+<path class="ln" marker-end="url(#a)" d="M198 116.0H221"/>
+<text class="k" x="224" y="38">FEATURES</text>
+<rect class="box" x="224" y="54" width="166" height="124" rx="8"/>
+<text class="h" x="238" y="82">Behaviour</text>
+<text class="s" x="238" y="106">delay, utilisation</text>
+<text class="s" x="238" y="124">repayment ratios</text>
+<text class="s" x="238" y="142">no sex or marital status</text>
+<path class="ln" marker-end="url(#a)" d="M391 116.0H414"/>
+<text class="k" x="417" y="38">MODELS</text>
+<rect class="box" x="417" y="54" width="166" height="124" rx="8"/>
+<text class="h" x="431" y="82">Two PD models</text>
+<text class="s" x="431" y="106">WoE scorecard (points)</text>
+<text class="s" x="431" y="124">monotonic gradient</text>
+<text class="s" x="431" y="142">boosting</text>
+<path class="ln" marker-end="url(#a)" d="M585 116.0H608"/>
+<text class="k" x="611" y="38">VALIDATE</text>
+<rect class="box" x="611" y="54" width="166" height="124" rx="8"/>
+<text class="h" x="625" y="82">Bank metrics</text>
+<text class="s" x="625" y="106">Gini, KS, calibration</text>
+<text class="s" x="625" y="124">decile rank ordering</text>
+<text class="s" x="625" y="142">PSI stability</text>
+<path class="ln" marker-end="url(#a)" d="M778 116.0H801"/>
+<text class="k" x="804" y="38">DECIDE</text>
+<rect class="out" x="804" y="54" width="166" height="124" rx="8"/>
+<text class="h" x="818" y="82">Approve / decline</text>
+<text class="s" x="818" y="106">profit based PD cutoff</text>
+<text class="s" x="818" y="124">scorecard table</text>
+</svg>

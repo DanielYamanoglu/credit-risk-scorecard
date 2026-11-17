@@ -1,0 +1,203 @@
+{
+  "dataset": {
+    "accounts": 30000,
+    "train": 21000,
+    "test": 9000,
+    "default_rate": 0.2212
+  },
+  "information_value": {
+    "current_delay": 0.878952974561143,
+    "months_late_6m": 0.8691995994950368,
+    "max_delay_6m": 0.779291740481285,
+    "payment_ratio": 0.19711189183169575,
+    "limit_bal": 0.1926762577394367,
+    "avg_payment_ratio_5m": 0.10654910078194851,
+    "avg_utilization_6m": 0.09363652088345575,
+    "balance_trend": 0.06926408160839742,
+    "utilization": 0.05450375912428222,
+    "education": 0.013066639498603932,
+    "age": 0.0089305388992059
+  },
+  "scorecard_characteristics": [
+    "current_delay",
+    "max_delay_6m",
+    "months_late_6m",
+    "avg_utilization_6m",
+    "balance_trend",
+    "limit_bal"
+  ],
+  "cv_gini": {
+    "scorecard": {
+      "mean": 0.5146233051058013,
+      "std": 0.019883299467202954
+    },
+    "gradient_boosting": {
+      "mean": 0.5571310525118972,
+      "std": 0.01836416577854004
+    }
+  },
+  "test": {
+    "scorecard": {
+      "auc": 0.739965240930456,
+      "gini": 0.47993048186091203,
+      "ks": 0.3925248150849173,
+      "brier": 0.14048877586580705,
+      "calibration_error": 0.013358620701271192
+    },
+    "gradient_boosting": {
+      "auc": 0.7697258937869865,
+      "gini": 0.539451787573973,
+      "ks": 0.4084602712491559,
+      "brier": 0.1368812242276001,
+      "calibration_error": 0.009883090752022445
+    }
+  },
+  "psi_train_vs_test": {
+    "scorecard": 0.0007627760685285783,
+    "gradient_boosting": 0.00035902321654276655
+  },
+  "cutoff": {
+    "scorecard": {
+      "pd_cutoff": 0.14951889022612708,
+      "approval_rate": 0.6087777777777778,
+      "bad_rate_approved": 0.11735718196751233,
+      "bad_rate_all": 0.2212222222222222,
+      "profit_per_1000_applicants": 180.11111111111111,
+      "approve_all_profit_per_1000_applicants": -327.3333333333333
+    },
+    "gradient_boosting": {
+      "pd_cutoff": 0.15896831643075227,
+      "approval_rate": 0.5511111111111111,
+      "bad_rate_approved": 0.09979838709677419,
+      "bad_rate_all": 0.2212222222222222,
+      "profit_per_1000_applicants": 221.11111111111111,
+      "approve_all_profit_per_1000_applicants": -327.3333333333333
+    }
+  },
+  "deciles": {
+    "scorecard": [
+      {
+        "decile": 1,
+        "accounts": 900,
+        "bad_rate": 0.6878,
+        "mean_pd": 0.6771
+      },
+      {
+        "decile": 2,
+        "accounts": 900,
+        "bad_rate": 0.3911,
+        "mean_pd": 0.4338
+      },
+      {
+        "decile": 3,
+        "accounts": 900,
+        "bad_rate": 0.2567,
+        "mean_pd": 0.2701
+      },
+      {
+        "decile": 4,
+        "accounts": 900,
+        "bad_rate": 0.1733,
+        "mean_pd": 0.1697
+      },
+      {
+        "decile": 5,
+        "accounts": 900,
+        "bad_rate": 0.1389,
+        "mean_pd": 0.1299
+      },
+      {
+        "decile": 6,
+        "accounts": 900,
+        "bad_rate": 0.14,
+        "mean_pd": 0.1213
+      },
+      {
+        "decile": 7,
+        "accounts": 900,
+        "bad_rate": 0.1111,
+        "mean_pd": 0.1094
+      },
+      {
+        "decile": 8,
+        "accounts": 900,
+        "bad_rate": 0.1078,
+        "mean_pd": 0.101
+      },
+      {
+        "decile": 9,
+        "accounts": 900,
+        "bad_rate": 0.1033,
+        "mean_pd": 0.093
+      },
+      {
+        "decile": 10,
+        "accounts": 900,
+        "bad_rate": 0.1022,
+        "mean_pd": 0.0855
+      }
+    ],
+    "gradient_boosting": [
+      {
+        "decile": 1,
+        "accounts": 900,
+        "bad_rate": 0.69,
+        "mean_pd": 0.7121
+      },
+      {
+        "decile": 2,
+        "accounts": 900,
+        "bad_rate": 0.41,
+        "mean_pd": 0.4157
+      },
+      {
+        "decile": 3,
+        "accounts": 900,
+        "bad_rate": 0.2656,
+        "mean_pd": 0.2562
+      },
+      {
+        "decile": 4,
+        "accounts": 900,
+        "bad_rate": 0.1944,
+        "mean_pd": 0.1923
+      },
+      {
+        "decile": 5,
+        "accounts": 900,
+        "bad_rate": 0.1656,
+        "mean_pd": 0.159
+      },
+      {
+        "decile": 6,
+        "accounts": 900,
+        "bad_rate": 0.1556,
+        "mean_pd": 0.133
+      },
+      {
+        "decile": 7,
+        "accounts": 900,
+        "bad_rate": 0.1033,
+        "mean_pd": 0.1096
+      },
+      {
+        "decile": 8,
+        "accounts": 900,
+        "bad_rate": 0.1044,
+        "mean_pd": 0.0887
+      },
+      {
+        "decile": 9,
+        "accounts": 900,
+        "bad_rate": 0.0667,
+        "mean_pd": 0.071
+      },
+      {
+        "decile": 10,
+        "accounts": 900,
+        "bad_rate": 0.0567,
+        "mean_pd": 0.0527
+      }
+    ]
+  }
+}
